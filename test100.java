@@ -15,6 +15,7 @@ public class UploadController {
     @RequestMapping("/uploadFile")
     public Result uploadFile(MultipartFile file){
         //1.创建一个FastDFS的客户端
+		//上传图片
         try {
             FastDFSClient fastDFSClient = new FastDFSClient("classpath:config/fastdfs_client.conf");
         //2.字节数组
